@@ -7,12 +7,29 @@ process.env.PORT = process.env.PORT || 3000;
 // ===============
 // entorno
 // ===============
+
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+// ===============
+// Seed
+// ===============
+
+process.env.SEED = process.env.SEED || 'TheOldHunterSeedDEV';
+
+// ===============
+// vencimiento del jwt
+// ===============
+// 60 sec
+// 60 min
+// 24 H
+// 30 D
+
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
 // ===============
 // Mongo
 // ===============
+
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
