@@ -58,9 +58,9 @@ async function verify(token) {
     console.log(process.eventNames.CLIENT_ID);
     const ticket = await client.verifyIdToken({
         idToken: token,
-        audience: process.eventNames.CLIENT_ID, // Specify the CLIENT_ID of the app that accesses the backend
-        // Or, if multiple clients access the backend:
-        //[CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
+        audience: '38457011505-np20b0c357tm141chper88h2ue1ovc7u.apps.googleusercontent.com' // Specify the CLIENT_ID of the app that accesses the backend
+            // Or, if multiple clients access the backend:
+            //[CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
     });
     const payload = ticket.getPayload();
 
