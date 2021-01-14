@@ -55,6 +55,7 @@ app.post('/login', (req, res) => {
 // Configuraciones de google
 
 async function verify(token) {
+    console.log(process.eventNames.CLIENT_ID);
     const ticket = await client.verifyIdToken({
         idToken: token,
         audience: process.eventNames.CLIENT_ID, // Specify the CLIENT_ID of the app that accesses the backend
