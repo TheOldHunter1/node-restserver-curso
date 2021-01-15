@@ -14,7 +14,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // Seed
 // ===============
 
-process.env.SEED = process.env.SEED || '';
+process.env.SEED = process.env.SEED || 'TheOldHunterSeedDEV';
 
 // ===============
 // vencimiento del jwt
@@ -24,7 +24,7 @@ process.env.SEED = process.env.SEED || '';
 // 24 H
 // 30 D
 
-process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+process.env.CADUCIDAD_TOKEN = '48h';
 
 // ===============
 // Mongo
@@ -44,4 +44,4 @@ process.env.urlDB = urlDB;
 // Google Client ID
 // ===============
 
-process.eventNames.CLIENT_ID = process.eventNames.CLIENT_ID || '';
+process.eventNames.CLIENT_ID = process.eventNames.CLIENT_ID
