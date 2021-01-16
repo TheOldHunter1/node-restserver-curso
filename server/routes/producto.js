@@ -185,7 +185,6 @@ app.delete('/productos/:id', verificaToken, (req, res) => {
             });
         }
 
-
         res.json({
             ok: true,
             producto: productoDB

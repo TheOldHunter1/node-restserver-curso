@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 
 // Habilitar carpeta public
 app.use(express.static(pathPublic));
+
 // configuracion global de rutas
 app.use(require('./routes/index'));
 
